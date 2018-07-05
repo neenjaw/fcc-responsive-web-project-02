@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <main>
+        <p id="description">Let us know how you enjoyed your meal</p>
+        <form action="post" id="survey-form">
+            <div>
+                <label id="name-label" for="name">* Name:</label>
+                <div>
+                    <input type="text" id="name">
+                </div>
+            </div>
+            <div>
+                <label id="email-label" for="email">* Email:</label>
+                <div>
+                    <input type="email" id="email">
+                </div>
+            </div>
+            <div>
+                <label id="number-label" for="number">* Age:</label>
+                <div>
+                    <input type="number" id="number" min="1" max="120">
+                </div>
+            </div>
+            <div>
+                <label id="dropdown-label" for="dropdown">* What time did you come to eat:</label>
+                <div>
+                    <select id="dropdown">
+                        <option value="1">08:00-11:00</option>
+                        <option value="2">11:00-13:00</option>
+                        <option value="3">13:00-17:00</option>
+                        <option value="4">17:00-21:00</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <p>* How likely is that you would recommend our restaurant to a friend?</p>
+                <div>
+                    <label for="definitely-checkbox"><input type="checkbox" name="rating" id="definitely-checkbox" value="yes">Definitely</label>
+                    <label for="maybe-checkbox"><input type="checkbox" name="rating" id="maybe-checkbox" value="maybe">Maybe</label>
+                    <label for="notsure-checkbox"><input type="checkbox" name="rating" id="notsure-checkbox" value="no">Not sure</label>
+                </div>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
